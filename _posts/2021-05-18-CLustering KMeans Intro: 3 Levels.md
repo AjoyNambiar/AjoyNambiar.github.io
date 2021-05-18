@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## 3 Levels to undestand KMeans Algorithm
 
@@ -10,7 +10,7 @@ Here I try to break down a a Machine Learning algorithm called KMeans which does
 
 Before we begin lets state logic behind clustering. It is to maximize the **similarity** of data within cluster and maximise the **dissimiarity** between clusters
 
-1. Level 1: Whats the use case of clustering?
+Level 1: Whats the use case of clustering?
 
 - _Customer Segmentation_. Business want to cluster their customers so they can improve the customer experience. Think about the Netflix or Amazon recommender system, here consumers are clustered from the shopping/ viewing behaviour and recommender uses it to next recommendation. Here the clustering will bring better customer experience retaining existing consumer or convert a prospect.
 
@@ -18,8 +18,12 @@ Before we begin lets state logic behind clustering. It is to maximize the **simi
 
 - _Credit Card Fraud Detection_. This is part of outlier detection. Here a 'normal' credit card usage say paying utility bills, usage at grocery stores is compared against the 'odd' usage like high amount usage in overseas country may be flagged as possible fraud and trigger a validation response leading to increased authentication checks like calling the client to verify the transaction.
 
-I have listed a few of the top business use cases where business can use data to generate the clustering alorithm to gain insights. Here I want to point out that the interpreation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may be useless and one should be ok to live with it. 
-On a more general note these algorithm can help people cluster their data and help then fix patterns when they are exploring the data
+So these were some cases business can use data to generate the clustering alorithm to gain insights. Here I want to point out that the interpreation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may be useless and one should be ok to live with it. 
+On a more general note these algorithm can help people cluster their data and help then find patterns when they are exploring the data and understand it better.
+
+Level 2: What does the  KMeans Clusering do?
+
+
 
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
