@@ -16,7 +16,10 @@ Before we begin lets state logic behind clustering. It is to maximize the **simi
 
 - _Document Classification_. With increasing amount of digital text and books an efficient way to catgegorize the those books is needed. Here clustering algorithm can help classifying using frequency of words, exisiting book tags into clusters. This increases the correct audience to reach the books efficiently.
 
-- Credit Card Fraud. This is part of Oulier detection. 
+- _Credit Card Fraud Detection_. This is part of outlier detection. Here a 'normal' credit card usage say paying utility bills, usage at grocery stores is compared against the 'odd' usage like high amount usage in overseas country may be flagged as possible fraud and trigger a validation response leading to increased authentication checks like calling the client to verify the transaction.
+
+I have listed a few of the top business use cases where business can use data to generate the clustering alorithm to gain insights. Here I want to point out that the interpreation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may be useless and one should be ok to live with it. 
+On a more general note these algorithm can help people cluster their data and help then fix patterns when they are exploring the data
 
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
