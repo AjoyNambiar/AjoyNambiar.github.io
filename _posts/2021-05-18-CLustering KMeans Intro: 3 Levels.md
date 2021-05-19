@@ -42,9 +42,27 @@ Lets start by importing the relvant libararies. The one in focus is KMeans from 
 
 <script src="https://gist.github.com/AjoyNambiar/a694f35e11e3cf4b2a482016b34e0205.js"></script>
 
- Load the data. here I have used open source California housing data from 1990 census, [see kaggle link](https://www.kaggle.com/camnugent/california-housing-prices)
+Load the data. here I have used open source California housing data from 1990 census, [see kaggle link](https://www.kaggle.com/camnugent/california-housing-prices). It has data for residential housing in California of a 'block' with location - lat/ long, median income of household and other house characteristics.
 
 
 <script src="https://gist.github.com/AjoyNambiar/edb302de420e8ce6e0a2d8ffe45d1b32.js"></script>
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Now for illustration can we cluser this dataset based on median income and housing location. In other words is there a pattern or theme in income and where people live. Let data tells us.
+
+<script src="https://gist.github.com/AjoyNambiar/f684b1a3c14970b49d2a1a7d34cfb427.js"></script>
+
+So what we have here is KMeans has clustered the data and we added the cluster label back to original data, see last column. Now comes the hardest part interpreting if these labels make any sense or not. For this lets go ahead an visualize data with cluser. First lets look at the map using location vs cluster label and next will be income compared with cluster label. Is there a theme here?
+
+![Map.JPG]({{site.baseurl}}/_posts/Map.JPG)
+
+![income.JPG]({{site.baseurl}}/_posts/income.JPG)
+
+
+With this  
+0- Mid income group living in North California in suburbs of San Fracisco
+
+1- Low income living in Suburb of LA or border towns, Mexico
+
+2 -High income living in downtown LA or San Francisco (Hollywood stars?)
+
+
