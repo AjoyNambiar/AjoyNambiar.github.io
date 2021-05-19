@@ -64,5 +64,3 @@ With this
 1- Low income living in Suburb of LA or border towns, Mexico
 
 2 -High income living in downtown LA or San Francisco (Hollywood stars?)
-
-
