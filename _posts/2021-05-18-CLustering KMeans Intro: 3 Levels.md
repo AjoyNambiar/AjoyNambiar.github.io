@@ -3,12 +3,12 @@ published: true
 ---
 ## 3 Levels to undestand KMeans Algorithm
 
-Clustering as name suggest if the acitivty of grouping and finding themes within the objects. We do it all the time without thinking about it, one unpacks their grocery bag and stores veggies in veggie tray, sugar goes in the cupboard sits next to tea. You get the idea.
+Here I try to break down a a Machine Learning algorithm called KMeans which does clustering in 3 steps. I think of it as levels of thinking each progressively more detail than the previous so if you want a preview check out level 1 or wants to start clustering your data with python this can be good starting point continue on till level 3.
 
-
-Here I try to break down a a Machine Learning algorithm called KMeans which does clustering in 3 steps. I think of it as levels of thinking each progressively more detail than the previous so if you want a preview or wants to start clusteing your data with python this can be good starting point.
+Clustering as name suggest is the activity of grouping and finding themes within given things. We do it all the time without thinking about it, one unpacks their grocery bag and stores veggies in veggie tray, sugar goes in the cupboard sits next to tea. You get the idea.
 
 Before we begin lets state logic behind clustering. It is to maximize the **similarity** of data within cluster and maximise the **dissimiarity** between clusters
+
 
 **Level 1**: Whats the use case of clustering?
 
@@ -16,16 +16,17 @@ Before we begin lets state logic behind clustering. It is to maximize the **simi
 
 - _Document Classification_. With increasing amount of digital text and books an efficient way to catgegorize the those books is needed. Here clustering algorithm can help classifying using frequency of words, exisiting book tags into clusters. This increases the correct audience to reach the books efficiently.
 
-- _Credit Card Fraud Detection_. This is part of outlier detection. Here a 'normal' credit card usage say paying utility bills, usage at grocery stores is compared against the 'odd' usage like high amount usage in overseas country may be flagged as possible fraud and trigger a validation response leading to increased authentication checks like calling the client to verify the transaction.
+- _Credit Card Fraud Detection_. This is part of outlier detection. Here a 'normal' credit card usage say paying utility bills, usage at grocery stores is compared against the 'odd' usage like high amount transaction in overseas country may be flagged as possible fraud and trigger an authentication checks like calling the client to verify the transaction.
 
-So these were some cases business can use data to generate the clustering alorithm to gain insights. Here I want to point out that the interpreation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may be useless and one should be ok to live with it. 
-While business use case gives some background, personally I think more day to day usage is for data analyst using these technique to cluster their data and help find patterns or themes when they are exploring the data and understand it better especially when size of dataset is big.
+So these were some of the many cases business can use data to generate the clustering alorithm to gain insights. Here I want to point out that the interpreation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may be useless and one should be ok to live with it. 
+
+While business use case gives some background, personally I think more day to day usage is for data analyst is to use these technique to cluster their data and help find patterns or themes when they are exploring the data and understand it better especially when size of dataset is big.
+
 
 **Level 2**: What does the  KMeans Clusering do?
 
-Follow 
-1. User loads the dataset n datapoints and inputs K random points the initial cluster centres - this is where user hands over control to machine.
-2. Machine assigns each data point to their nearest cluster centre. The most common way of measuring the distance between the points is the Euclidean distance
+1. User loads the dataset n datapoints and inputs K cluster size - this is where user hands over control to machine.
+2. Machine assigns K random points as initial cluster centres and each data point to their nearest cluster centre
 3. For each cluster, compute the new cluster centre which will be the mean of all cluster members
 4. Now re-assign all the data points to the diffrent clusters by taking into account the new cluster centres
 5. Keep iterating through the step 3 & 4 until there are no further changes possible
