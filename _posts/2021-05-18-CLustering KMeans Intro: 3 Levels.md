@@ -35,6 +35,8 @@ Follow
 
 ![jekyll-logo.png](/images/jekyll-logo.png)
 
+![jekyll-now-theme-screenshot](/images/jekyll-now-theme-screenshot.jpg)
+
 
 If you are wondering what centroid is think of it as mean/ avergae or its the same as center of gravity from high school physics. Essentially what we have done is the found clusters whose centroids are 'Close' (similar) to points within cluster and 'Far' (dissimilar) from points from points from other cluster.
 
