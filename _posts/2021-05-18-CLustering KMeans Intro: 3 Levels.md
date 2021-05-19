@@ -59,9 +59,9 @@ Now for illustration can we cluser this dataset based on median income and housi
 
 So what we have here is KMeans has clustered the data and we added the cluster label back to original data, see last column. Now comes the hardest part interpreting if these labels make any sense or not. For this lets go ahead an visualize data with cluser. First lets look at the map using location vs cluster label and next will be income compared with cluster label. Is there a theme here?
 
-![Map.JPG](images/Map.JPG)
+![Map.JPG](/images/Map.JPG)
 
-![income.JPG](images/income.JPG)
+![income.JPG](/images/income.JPG)
 
 ![income1](/_posts/income1.PNG)
 
