@@ -63,6 +63,9 @@ So what we have here is KMeans has clustered the data and we added the cluster l
 
 ![income.JPG]({{site.baseurl}}/_posts/income.JPG)
 
+![income1](/_posts/income1.PNG)
+
+
 
 With this  
 0- Mid income group living in North California in suburbs of San Fracisco
