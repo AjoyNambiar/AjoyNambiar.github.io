@@ -8,9 +8,9 @@ Clustering as name suggest if the acitivty of grouping and finding themes within
 
 Here I try to break down a a Machine Learning algorithm called KMeans which does clustering in 3 steps. I think of it as levels of thinking each progressively more detail than the previous so if you want a preview or wants to start clusteing your data with python this can be good starting point.
 
-Before we begin lets state logic behind clustering. It is to maximize the **similarity** of data within cluster and maximise the **dissimiarity** between clusters
+Before we begin lets state logic behind clustering. It is to maximize the _similarity_ of data within cluster and maximise the _dissimiarity_ between clusters
 
-Level 1: Whats the use case of clustering?
+**Level 1**: Whats the use case of clustering?
 
 - _Customer Segmentation_. Business want to cluster their customers so they can improve the customer experience. Think about the Netflix or Amazon recommender system, here consumers are clustered from the shopping/ viewing behaviour and recommender uses it to next recommendation. Here the clustering will bring better customer experience retaining existing consumer or convert a prospect.
 
@@ -21,7 +21,24 @@ Level 1: Whats the use case of clustering?
 So these were some cases business can use data to generate the clustering alorithm to gain insights. Here I want to point out that the interpreation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may be useless and one should be ok to live with it. 
 On a more general note these algorithm can help people cluster their data and help then find patterns when they are exploring the data and understand it better.
 
-Level 2: What does the  KMeans Clusering do?
+**Level 2**: What does the  KMeans Clusering do?
+
+
+1. Start by choosing K random points the initial cluster centres.
+2. Assign each data point to their nearest cluster centre. The most common way of measuring the distance between the points is the Euclidean distance
+3. For each cluster, compute the new cluster centre which will be the mean of all cluster members
+4. Now re-assign all the data points to the diffrent clusters by taking into account the new cluster centres
+5. Keep iterating through the step 3 & 4 until there are no further changes possible
+
+![Capture1.JPG]({{site.baseurl}}/_posts/Capture1.JPG)
+
+If yo
+
+
+
+<script src="https://gist.github.com/AjoyNambiar/a694f35e11e3cf4b2a482016b34e0205.js"></script>
+
+https://gist.github.com/AjoyNambiar/a694f35e11e3cf4b2a482016b34e0205
 
 
 
