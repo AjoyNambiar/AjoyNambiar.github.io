@@ -36,15 +36,14 @@ While business use case gives some background, personally I think more day to da
 
 
 
-
-If you are wondering what centroid is think of it as mean/ avergae or its the same as center of gravity from high school physics. Essentially what we have done is the found clusters whose centroids are 'Close' (similar) to points within cluster and 'Far' (dissimilar) from points from points from other cluster.
+If you are wondering what centroid is think of center of gravity from high school physics. Essentially what we have done is the found clusters whose centroids are 'Close' (similar) to points within cluster and 'Far' (dissimilar) from points from points from other cluster.
 
 On side note here the example shows a 2-D clustering problem, in real world the data points can have several features making it hard to visualize cluster but algorithm works uses same logic to work.
 
 
 **Level 3**: Clustering Starter Code in Python
 
-Lets start by importing the relvant libararies. The one in focus is KMeans from sklearn.cluster package.
+Lets start by importing the relevant libararies. The one in focus is KMeans from sklearn.cluster package.
 
 <script src="https://gist.github.com/AjoyNambiar/a694f35e11e3cf4b2a482016b34e0205.js"></script>
 
@@ -63,8 +62,8 @@ So what we have here is KMeans has clustered the data and we added the cluster l
 
 ![income.JPG](/images/income.JPG)
 
-One way to look at clusters is 
-0- Mid income group living in North California in suburbs and surrounding areas of San Fracisco
+One way to look at 1990 California housing clusters is 
+0- People living in North California in suburbs and surrounding areas of San Fracisco. Their income is spreadout
 1- Low income living in Suburb of LA and surrounding areas and some in border towns - Mexico, Nevada
 2 -High income living in downtown LA  (Hollywood stars?)
 
