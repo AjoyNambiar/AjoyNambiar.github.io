@@ -30,7 +30,7 @@ Follow
 4. Now re-assign all the data points to the diffrent clusters by taking into account the new cluster centres
 5. Keep iterating through the step 3 & 4 until there are no further changes possible
 
-![Capture1.JPG](/_posts/Capture1.JPG)
+![Capture1](/_posts/Capture1.JPG)
 
 
 ![jekyll-logo.png](/images/jekyll-logo.png)
