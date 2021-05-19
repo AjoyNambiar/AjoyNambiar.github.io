@@ -27,8 +27,8 @@ While business use case gives some background, personally I think more day to da
 
 1. User loads the dataset n datapoints and inputs K cluster size - this is where user hands over control to machine.
 2. Machine assigns K random points as initial cluster centres and each data point to their nearest cluster centre
-3. For each cluster, compute the new cluster centre which will be the mean of all cluster members
-4. Now re-assign all the data points to the diffrent clusters by taking into account the new cluster centres
+3. For each cluster, compute the new cluster centroid
+4. Now re-assign all the data points to the diffrent clusters by taking into account the new cluster centroids
 5. Keep iterating through the step 3 & 4 until there are no further changes possible
 
 ![Capture1](/images/Capture1.JPG)
@@ -39,9 +39,10 @@ While business use case gives some background, personally I think more day to da
 
 If you are wondering what centroid is think of it as mean/ avergae or its the same as center of gravity from high school physics. Essentially what we have done is the found clusters whose centroids are 'Close' (similar) to points within cluster and 'Far' (dissimilar) from points from points from other cluster.
 
-On side note here the example shows a 2-D clustering problem, in real world the data points can have several feature making it hard to visualize cluster but algorithm works the same.
+On side note here the example shows a 2-D clustering problem, in real world the data points can have several features making it hard to visualize cluster but algorithm works uses same logic to work.
 
-**Level 3**: Hands on with a Code in Python
+
+**Level 3**: Clustering Starter Code in Python
 
 Lets start by importing the relvant libararies. The one in focus is KMeans from sklearn.cluster package.
 
@@ -52,7 +53,7 @@ Load the data. here I have used open source California housing data from 1990 ce
 
 <script src="https://gist.github.com/AjoyNambiar/edb302de420e8ce6e0a2d8ffe45d1b32.js"></script>
 
-Now for illustration can we cluser this dataset based on median income and housing location. In other words is there a pattern or theme in income and where people live. Let data tells us.
+Can we find a pattern or theme in income and where people live. Let data tells us.
 
 <script src="https://gist.github.com/AjoyNambiar/f684b1a3c14970b49d2a1a7d34cfb427.js"></script>
 
@@ -67,7 +68,7 @@ One way to look at clusters is
 1- Low income living in Suburb of LA and surrounding areas and some in border towns - Mexico, Nevada
 2 -High income living in downtown LA  (Hollywood stars?)
 
-**Bonus:** You may be wondering how should we decide on K i.e. number of cluster.  One of the more simple gudiance is called 'Elbow Method'. Here we try out many cluster and calcluate a metric called WCSS - Sum of Squares of points in cluster to its centroid. This metric drops off as K increases. Initially the rate of decrease is high and at some point the rate is lower, that is the 'Elbow'. K around this elbow is the most optimum. Idea is WCSS is low  enough (clusters are similar) while K is not too big so a cluster will make sense.
+**Bonus:** You may be wondering how should we decide on K i.e. number of cluster.  One of the more simple guidance is called 'Elbow Method'. Here we try out many cluster and calcluate a metric called WCSS - Sum of Squares of points in cluster to its centroid. This metric drops off as K increases. Initially the rate of decrease is high and at some point the rate is lower, that is the 'Elbow'. K around this elbow is the most optimum. Idea is we need a tradeoff where WCSS is low  enough (clusters are similar) while K is not too big so a clustering will make sense.
 
 Here is how I figure out K=3 maybe optimum for our data set
 
