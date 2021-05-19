@@ -33,9 +33,7 @@ Follow
 ![Capture1](/images/Capture1.JPG)
 
 
-![jekyll-logo.png](/images/jekyll-logo.png)
 
-![jekyll-now-theme-screenshot](/images/jekyll-now-theme-screenshot.jpg)
 
 
 If you are wondering what centroid is think of it as mean/ avergae or its the same as center of gravity from high school physics. Essentially what we have done is the found clusters whose centroids are 'Close' (similar) to points within cluster and 'Far' (dissimilar) from points from points from other cluster.
@@ -63,13 +61,13 @@ So what we have here is KMeans has clustered the data and we added the cluster l
 
 ![income.JPG](/images/income.JPG)
 
-![income1](/_posts/income1.PNG)
+One way to look at clusters is 
+0- Mid income group living in North California in suburbs and surrounding areas of San Fracisco
+1- Low income living in Suburb of LA and surrounding areas and some in border towns - Mexico, Nevada
+2 -High income living in downtown LA  (Hollywood stars?)
 
+**Bonus:** You may be wondering how should we decide on K i.e. number of cluster.  One of the more simple gudiance is called 'Elbow Method'. Here we try out many cluster and calcluate a metric called WCSS - Sum of Squares of points in cluster to its centroid. This metric drops off as K increases. Initially the rate of decrease is high and at some point the rate is lower, that is the 'Elbow'. K around this elbow is the most optimum. Idea is WCSS is low  enough (clusters are similar) while K is not too big so a cluster will make sense.
 
+Here is how I figure out K=3 maybe optimum for our data set
 
-With this  
-0- Mid income group living in North California in suburbs of San Fracisco
-
-1- Low income living in Suburb of LA or border towns, Mexico
-
-2 -High income living in downtown LA or San Francisco (Hollywood stars?)
+![Elbow.PNG](/images/Elbow.PNG)
