@@ -32,6 +32,7 @@ Follow
 
 ![Capture1.JPG]({{site.baseurl}}/_posts/Capture1.JPG)
 
+
 If you are wondering what centroid is think of it as mean/ avergae or its the same as center of gravity from high school physics. Essentially what we have done is the found clusters whose centroids are 'Close' (similar) to points within cluster and 'Far' (dissimilar) from points from points from other cluster.
 
 On side note here the example shows a 2-D clustering problem, in real world the data points can have several feature making it hard to visualize cluster but algorithm works the same.
