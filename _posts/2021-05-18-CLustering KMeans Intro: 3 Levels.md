@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## 3 Levels to undestand KMeans Algorithm
 
@@ -35,7 +35,7 @@ If you are wondering what centroid is think of it as mean/ avergae or its the sa
 
 On side note here the example shows a 2-D clustering problem, in real world the data points can have several feature making it hard to visualize cluster but algorithm works the same.
 
-
+**Level 3**: Hands on with a Code
 
 
 <script src="https://gist.github.com/AjoyNambiar/a694f35e11e3cf4b2a482016b34e0205.js"></script>
