@@ -19,12 +19,13 @@ Before we begin lets state logic behind clustering. It is to maximize the **simi
 - _Credit Card Fraud Detection_. This is part of outlier detection. Here a 'normal' credit card usage say paying utility bills, usage at grocery stores is compared against the 'odd' usage like high amount usage in overseas country may be flagged as possible fraud and trigger a validation response leading to increased authentication checks like calling the client to verify the transaction.
 
 So these were some cases business can use data to generate the clustering alorithm to gain insights. Here I want to point out that the interpreation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may be useless and one should be ok to live with it. 
-On a more general note these algorithm can help people cluster their data and help then find patterns when they are exploring the data and understand it better.
+While business use case gives some background, personally I think more day to day usage is for data analyst using these technique to cluster their data and help find patterns or themes when they are exploring the data and understand it better especially when size of dataset is big.
 
 **Level 2**: What does the  KMeans Clusering do?
 
-1. Start by choosing K random points the initial cluster centres.
-2. Assign each data point to their nearest cluster centre. The most common way of measuring the distance between the points is the Euclidean distance
+Follow 
+1. User loads the dataset n datapoints and inputs K random points the initial cluster centres - this is where user hands over control to machine.
+2. Machine assigns each data point to their nearest cluster centre. The most common way of measuring the distance between the points is the Euclidean distance
 3. For each cluster, compute the new cluster centre which will be the mean of all cluster members
 4. Now re-assign all the data points to the diffrent clusters by taking into account the new cluster centres
 5. Keep iterating through the step 3 & 4 until there are no further changes possible
@@ -35,13 +36,15 @@ If you are wondering what centroid is think of it as mean/ avergae or its the sa
 
 On side note here the example shows a 2-D clustering problem, in real world the data points can have several feature making it hard to visualize cluster but algorithm works the same.
 
-**Level 3**: Hands on with a Code
+**Level 3**: Hands on with a Code in Python
 
+Lets start by importing the relvant libararies. The one in focus is KMeans from sklearn.cluster package.
 
 <script src="https://gist.github.com/AjoyNambiar/a694f35e11e3cf4b2a482016b34e0205.js"></script>
 
+ Load the data. here I have used open source California housing data from 1990 census, [see kaggle link](https://www.kaggle.com/camnugent/california-housing-prices)
 
-[https://gist.github.com/AjoyNambiar/a694f35e11e3cf4b2a482016b34e0205](https://gist.github.com/AjoyNambiar/a694f35e11e3cf4b2a482016b34e0205)
 
+<script src="https://gist.github.com/AjoyNambiar/edb302de420e8ce6e0a2d8ffe45d1b32.js"></script>
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
