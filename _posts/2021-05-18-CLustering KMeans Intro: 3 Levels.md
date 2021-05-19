@@ -30,7 +30,7 @@ Follow
 4. Now re-assign all the data points to the diffrent clusters by taking into account the new cluster centres
 5. Keep iterating through the step 3 & 4 until there are no further changes possible
 
-![Capture1.jpg]({{site.baseurl}}/_posts/Capture1.jpg)
+![Capture1.JPG]({{site.baseurl}}/_posts/Capture1.JPG)
 
 
 If you are wondering what centroid is think of it as mean/ avergae or its the same as center of gravity from high school physics. Essentially what we have done is the found clusters whose centroids are 'Close' (similar) to points within cluster and 'Far' (dissimilar) from points from points from other cluster.
@@ -54,9 +54,9 @@ Now for illustration can we cluser this dataset based on median income and housi
 
 So what we have here is KMeans has clustered the data and we added the cluster label back to original data, see last column. Now comes the hardest part interpreting if these labels make any sense or not. For this lets go ahead an visualize data with cluser. First lets look at the map using location vs cluster label and next will be income compared with cluster label. Is there a theme here?
 
-![Map.jpg]({{site.baseurl}}/_posts/Map.jpg)
+![Map.JPG]({{site.baseurl}}/_posts/Map.JPG)
 
-![income.jpg]({{site.baseurl}}/_posts/income.jpg)
+![income.JPG]({{site.baseurl}}/_posts/income.JPG)
 
 
 With this  
