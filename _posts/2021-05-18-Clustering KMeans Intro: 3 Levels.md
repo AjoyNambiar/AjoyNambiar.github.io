@@ -61,7 +61,7 @@ Can we find a pattern or theme in income and where people live. Let data tells u
 
 So what we have here is KMeans has clustered the data and we added the cluster label back to original data, see last column. Now comes the hardest part interpreting if these labels make any sense or not. For this lets go ahead an visualize data with cluser. First lets look at the map using location vs cluster label and next will be income compared with cluster label. Is there a theme here?
 
-_On side note if you know of easy way to bring a world map and plot data on it, please let me know._
+_On side note if you know of easy way to bring a world map in python viz please let me know._
 
 ![Map.JPG](/images/Map.JPG)
 
