@@ -68,6 +68,7 @@ _On side note if you know of easy way to bring a world map in python viz please 
 ![income.JPG](/images/income.JPG)
 
 Quick look at the charts I can say the 3 cluster for 1990 California housing data are 
+
 0- People living in North California in suburbs and surrounding areas of San Fracisco. Their income is spreadout
 
 1- Low income living in Suburb of LA and surrounding areas and some in border towns - Mexico, Nevada
