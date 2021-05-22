@@ -20,7 +20,7 @@ Here are few interesting use cases of cluseting
 
 - _Credit Card Fraud Detection_. This is part of outlier detection. Here a 'normal' credit card usage say paying utility bills, usage at grocery stores is compared against the 'odd' usage like high amount transaction in overseas country may be flagged as possible fraud and trigger an authentication checks like calling the client to verify the transaction.
 
-So these were some of the many cases business can use data to generate the clustering algorithm to make business process efficient. Here I want to point out that the interpretation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may be useless and one should be ok to live with it. 
+So these were some of the many cases business can use data to generate the clustering algorithm to make business process efficient. Here I want to point out that the interpretation of cluster is key hence involvement of domain specialist is important to give context. In many cases the cluster results may not make sense and will be useless and one should be ok to live with it. 
 
 While business use case gives some background and motivation to learn more, personally I think more day to day usage to use these technique to cluster ones data and help find patterns or themes when someone is exploring the data and understand it better especially when size of dataset is big.
 
@@ -75,7 +75,7 @@ Quick look at the charts I can say the 3 cluster for 1990 California housing dat
 
 2 -High income living in downtown LA  (Hollywood stars?)
 
-**Bonus:** You may be wondering how should we decide on K i.e. number of cluster.  One of the more simple guidance is called 'Elbow Method'. Here we try out many cluster and calcluate a metric called WCSS (Within Cluster Sum of Square) - Sum of Squares of points in cluster to its own centroid. This metric drops off as K increases. Initially the rate of decrease is high and at some point the rate is slows down, that is the 'Elbow'. K around this elbow is the most optimum. Idea is we need a tradeoff where WCSS is low  enough (clusters are similar) while K is not too big so a clustering will make sense.
+**Bonus:** How to decide on K i.e. number of cluster.  One of the more simple guidance is called 'Elbow Method'. Here we try out many cluster and calcluate a metric called WCSS (Within Cluster Sum of Square) - Sum of Squares of points in cluster to its own centroid. This metric drops off as K increases. Initially the rate of decrease is high and at some point the rate is slows down, that is the 'Elbow'. K around this elbow is the most optimum. Idea is we need a tradeoff where WCSS is low  enough (clusters are similar) while K is not too big so a clustering will make sense.
 
 Here is how I figure out K=3 maybe optimum for our data set
 
