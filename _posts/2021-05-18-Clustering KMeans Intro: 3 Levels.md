@@ -69,7 +69,9 @@ _On side note if you know of easy way to bring a world map in python viz please 
 
 Quick look at the charts I can say the 3 cluster for 1990 California housing data are 
 0- People living in North California in suburbs and surrounding areas of San Fracisco. Their income is spreadout
+
 1- Low income living in Suburb of LA and surrounding areas and some in border towns - Mexico, Nevada
+
 2 -High income living in downtown LA  (Hollywood stars?)
 
 **Bonus:** You may be wondering how should we decide on K i.e. number of cluster.  One of the more simple guidance is called 'Elbow Method'. Here we try out many cluster and calcluate a metric called WCSS (Within Cluster Sum of Square) - Sum of Squares of points in cluster to its own centroid. This metric drops off as K increases. Initially the rate of decrease is high and at some point the rate is slows down, that is the 'Elbow'. K around this elbow is the most optimum. Idea is we need a tradeoff where WCSS is low  enough (clusters are similar) while K is not too big so a clustering will make sense.
