@@ -8,7 +8,7 @@ published: true
 
 Decision Tree may help explore relationship between variable and check for data consistency. The tree comes from Machine Learning algorithm and if there is a strong theme in data a tree built by the machine will have high accuracy. The advantage of Decision Tree is simplicity, they help in visualizing the relationship amongst the attributes.
 
-In this post I show a way to do it in WEKA open source no-code / GUI based data analysis and machine learning application. GUI is intuitive and users with no background in coding and machine learning can come with their Decision Tree for their data
+In this post I show a way to do it in WEKA open source no-code / GUI based data analysis and machine learning application. GUI is intuitive and users with no background in coding and machine learning can come with their Decision Tree for their data. https://sourceforge.net/projects/weka/
 
 Just to clarify the goal is not to predict as usual use case of such algorithm, it is to spotlight broad themes in the dataset helpful while exploring. But it could be a pathway to delve deeper into classification algorithms later on.
 
