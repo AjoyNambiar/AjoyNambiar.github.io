@@ -5,6 +5,7 @@ published: true
 ### ![DT](/images/DT.PNG)
 
 
+
 Decision Tree may help explore relationship between variable and check for data consistency. The tree comes from Machine Learning algorithm and if there is a strong theme in data a tree built my machine will have high accuracy. The advantage of Decision Tree is simplicity, they help in visualizing the relationship amongst the attributes.
 
 In this post I show a way to do it in WEKA open source no-code / GUI based data analysis and machine learning application. GUI is intuitive and users with no background in coding and machine learning can come with their Decision Tree for their data
@@ -49,6 +50,5 @@ Similarly, for Females who were in cabin class 2 or lower are most likely to sur
 
 The main idea is using few clicks in Weka and very little data processing the decision tree is able to highlight here strong connection between attributes Sex, then Age and PClass on passenger’s survival. The higher the attribute shows up in tree it effect is higher the lower the it is on branch lesser role it plays with key/ main attribute.
 
-Titinic Survival Decision Tree
   ![Titanic Tree](/images/Titanic Tree.PNG)
-  
+_Titinic Survival Decision Tree_
