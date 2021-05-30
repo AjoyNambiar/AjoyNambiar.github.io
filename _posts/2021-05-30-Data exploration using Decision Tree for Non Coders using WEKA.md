@@ -3,7 +3,7 @@ published: true
 ---
 ### Decision Tree for Non-Coders using WEKA
 
-![DT](/images/DT.PNG)
+### ![DT](/images/DT.PNG)
 
 
 Decision Tree may help explore relationship between variable and check for data consistency. The tree comes from Machine Learning algorithm and If there is a strong theme in data the tree will have high accuracy. The advantage of Decision Tree is simplicity, they help in visualizing the relationship.
