@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Data exploration using Decision Tree for Non Coders using WEKA
 
