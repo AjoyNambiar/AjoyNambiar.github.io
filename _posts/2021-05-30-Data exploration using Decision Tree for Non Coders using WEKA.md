@@ -15,7 +15,7 @@ Above is weird Decision Tree which predicts if one is man or woman based shoes o
 
 ### Decision Tree for Non-Coders using WEKA
 **Here are the steps to build decision tree in WEKA**
-Here are I have loaded training file from Titanic data set from Kaggle https://www.kaggle.com/c/titanic
+Here for illustration I have loaded training file from Titanic open dataset from Kaggle https://www.kaggle.com/c/titanic
 Data shows passenger data – Age, Sex, Name, Travelling Class, Boarding port and finally if they survived the accident. If we are curious in understanding main factors in  passenger survival, Decision Tree can be a good option. 
 
 _Step 1_: Prepare the datset into .csv file for Weka, using Explorer and Open File in Preprocess There are other file formats which WEKA can accept. Once csv file is loaded it you can click each attribute and see the its statistics on middle right – mean, std dev, min, max, distinct and also number of missing values are show. A histogram is shown in bottom right of the attribute and split with a nominal attribute can be plotted – here the split of nominal attribute is show. Blue is people who did not survive and red are one who lived.
