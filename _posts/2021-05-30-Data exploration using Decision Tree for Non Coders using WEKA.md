@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-## Decision Tree for Non-Coders using WEKA
+### Decision Tree for Non-Coders using WEKA
 
 ![DT](/images/DT.PNG)
 
