@@ -49,4 +49,6 @@ Similarly, for Females who were in cabin class 2 or lower are most likely to sur
 
 The main idea is using few clicks in Weka and very little data processing the decision tree is able to highlight here strong connection between attributes Sex, then Age and PClass on passenger’s survival. The higher the attribute shows up in tree it effect is higher the lower the it is on branch lesser role it plays with key/ main attribute.
 
+Titinic Survival Decision Tree
   ![Titanic Tree](/images/Titanic Tree.PNG)
+  
