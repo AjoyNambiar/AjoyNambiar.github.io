@@ -21,6 +21,7 @@ Above is weird Decision Tree which predicts if one is man or woman based shoes o
 
 Here for illustration I have loaded training file from Titanic open dataset from Kaggle https://www.kaggle.com/c/titanic
 
+
 Data shows passenger data – Age, Sex, Name, Travelling Class, Boarding port and finally if they survived the ill fated maiden voyage of Titanic. If we are curious in understanding main factors in  passenger survival, Decision Tree can be a good option. 
 
 _Step 1_: Prepare the datset into .csv file for Weka, using Explorer and Open File in Preprocess There are other file formats which WEKA can accept. 
