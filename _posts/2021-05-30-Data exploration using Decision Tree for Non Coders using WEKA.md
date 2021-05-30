@@ -13,7 +13,6 @@ Just to clarify the goal is not to predict anything, it is to spotlight the data
 A decision tree is a visual representation of ‘decision’ that is taken based on input data, essentially an in-then-else. Business loves it is very easy to go through and to communicate. The tree starts with a root node which is the first question and then carries down decision nodes, the follow up questions before finally reaching a prediction. 
 Above is weird Decision Tree which predicts if one is man or woman based shoes one owns. :)
 
-### Decision Tree for Non-Coders using WEKA
 **Here are the steps to build decision tree in WEKA**
 Here for illustration I have loaded training file from Titanic open dataset from Kaggle https://www.kaggle.com/c/titanic
 Data shows passenger data – Age, Sex, Name, Travelling Class, Boarding port and finally if they survived the accident. If we are curious in understanding main factors in  passenger survival, Decision Tree can be a good option. 
