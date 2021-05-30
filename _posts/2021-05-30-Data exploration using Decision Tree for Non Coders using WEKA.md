@@ -5,20 +5,20 @@ published: true
 ### ![DT](/images/DT.PNG)
 
 
-Decision Tree may help explore relationship between variable and check for data consistency. The tree comes from Machine Learning algorithm and If there is a strong theme in data a tree built my machine will have high accuracy. The advantage of Decision Tree is simplicity, they help in visualizing the relationship amongst the attributes.
+Decision Tree may help explore relationship between variable and check for data consistency. The tree comes from Machine Learning algorithm and if there is a strong theme in data a tree built my machine will have high accuracy. The advantage of Decision Tree is simplicity, they help in visualizing the relationship amongst the attributes.
 
 In this post I show a way to do it in WEKA open source no-code / GUI based data analysis and machine learning application. GUI is intuitive and users with no background in coding and machine learning can come with their Decision Tree for their data
 
-Just to clarify the goal is not to predict anything, it is to spotlight broad themes in the dataset helpful while exploring.
+Just to clarify the goal is not to predict as usual use case of such algorithm, it is to spotlight broad themes in the dataset helpful while exploring. But it could be a pathway to delve deeper into classification algorithms later on.
 
 **Why a decision tree?**
-A decision tree is a visual representation of ‘decision’ that is taken based on input data, essentially an if-then-else. Business loves it is very easy to go through and to communicate amongst teams. The tree starts with a root node which is the first question and then carries down decision nodes, the follow up questions before finally reaching a prediction. 
+A decision tree is a visual representation of ‘decision’ that is taken based on input data, essentially an if-then-else. Business loves it is very easy to go through and to communicate amongst teams. The tree starts with a root node which is the first question and then carries down decision nodes, it asks follow up questions before finally reaching a prediction at the end of the branch.
 Above is weird Decision Tree which predicts if one is man or woman based shoes one owns. :)
 
 **Here are the steps to build decision tree in WEKA**
 
 Here for illustration I have loaded training file from Titanic open dataset from Kaggle https://www.kaggle.com/c/titanic
-Data shows passenger data – Age, Sex, Name, Travelling Class, Boarding port and finally if they survived the accident. If we are curious in understanding main factors in  passenger survival, Decision Tree can be a good option. 
+Data shows passenger data – Age, Sex, Name, Travelling Class, Boarding port and finally if they survived the ill fated maiden voyage of Titanic. If we are curious in understanding main factors in  passenger survival, Decision Tree can be a good option. 
 
 _Step 1_: Prepare the datset into .csv file for Weka, using Explorer and Open File in Preprocess There are other file formats which WEKA can accept. Once csv file is loaded it you can click each attribute and see the its statistics on middle right – mean, std dev, min, max, distinct and also number of missing values are show. A histogram is shown in bottom right of the attribute and split with a nominal attribute can be plotted – here the split of nominal attribute is show. Blue is people who did not survive and red are one who lived.
 
