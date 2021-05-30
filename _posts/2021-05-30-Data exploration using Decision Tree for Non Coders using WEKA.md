@@ -5,12 +5,14 @@ published: true
 ### ![DT](/images/DT.PNG)
 
 
-Decision Tree may help explore relationship between variable and check for data consistency. The tree comes from Machine Learning algorithm and If there is a strong theme in data the tree will have high accuracy. The advantage of Decision Tree is simplicity, they help in visualizing the relationship.
+Decision Tree may help explore relationship between variable and check for data consistency. The tree comes from Machine Learning algorithm and If there is a strong theme in data a tree built my machine will have high accuracy. The advantage of Decision Tree is simplicity, they help in visualizing the relationship amongst the attributes.
+
 In this post I show a way to do it in WEKA open source no-code / GUI based data analysis and machine learning application. GUI is intuitive and users with no background in coding and machine learning can come with their Decision Tree for their data
-Just to clarify the goal is not to predict anything, it is to spotlight the dataset.
+
+Just to clarify the goal is not to predict anything, it is to spotlight broad themes in the dataset helpful while exploring.
 
 **Why a decision tree?**
-A decision tree is a visual representation of ‘decision’ that is taken based on input data, essentially an in-then-else. Business loves it is very easy to go through and to communicate. The tree starts with a root node which is the first question and then carries down decision nodes, the follow up questions before finally reaching a prediction. 
+A decision tree is a visual representation of ‘decision’ that is taken based on input data, essentially an if-then-else. Business loves it is very easy to go through and to communicate amongst teams. The tree starts with a root node which is the first question and then carries down decision nodes, the follow up questions before finally reaching a prediction. 
 Above is weird Decision Tree which predicts if one is man or woman based shoes one owns. :)
 
 **Here are the steps to build decision tree in WEKA**
