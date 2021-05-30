@@ -12,7 +12,7 @@ Just to clarify the goal is not to predict anything, it is to spotlight the data
 
 **Why a decision tree?**
 A decision tree is a visual representation of ‘decision’ that is taken based on input data, essentially an in-then-else. Business loves it is very easy to go through and to communicate. The tree starts with a root node which is the first question and then carries down decision nodes, the follow up questions before finally reaching a prediction. 
-In a weird case above Decision Tree is predicting if one is man or woman based shoes one owns.
+Above is weird Decision Tree which predicts if one is man or woman based shoes one owns. :)
 
 **Here are the steps to build decision tree in WEKA**
 Here are I have loaded training file from Titanic data set from Kaggle https://www.kaggle.com/c/titanic
