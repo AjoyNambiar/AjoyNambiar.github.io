@@ -16,7 +16,7 @@ Just to clarify the goal is not to predict as usual use case of such algorithm, 
 
 A decision tree is a visual representation of ‘decision’ that is taken based on input data, essentially an if-then-else. Business loves it is very easy to go through and to communicate amongst teams. The tree starts with a root node which is the first question and then carries down decision nodes, it asks follow up questions before finally reaching a prediction at the end of the branch.
 
-Above is weird Decision Tree which predicts if one is man or woman based shoes one owns. :)
+Above is weird Decision Tree which predicts if one is man or a woman based on shoes they owns. :)
 
 **Here are the steps to build decision tree in WEKA**
 
