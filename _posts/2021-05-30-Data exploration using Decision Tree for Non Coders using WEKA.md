@@ -18,7 +18,7 @@ A decision tree is a visual representation of ‘decision’ that is taken based
 
 Above is weird Decision Tree which predicts if one is man or a woman based on shoes they owns. :)
 
-**Here are the steps to build decision tree in WEKA**
+**Steps to build decision tree in WEKA**
 
 Here for illustration I have loaded training file from Titanic open dataset from Kaggle https://www.kaggle.com/c/titanic
 
