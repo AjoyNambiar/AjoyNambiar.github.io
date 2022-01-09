@@ -88,6 +88,3 @@ I found Python Record Linkage Toolkit has several additional capabilities:
 The problem I faces it is a little more complicated to wrangle the results in order to do further validation. However, the steps are relatively standard pandas commands so do not let that intimidate you.
 
 credits: Title image - El cajista [https://www.oldbookillustrations.com/illustrations/compositor-composing-stick/](https://www.oldbookillustrations.com/illustrations/compositor-composing-stick/)
-
-
-
