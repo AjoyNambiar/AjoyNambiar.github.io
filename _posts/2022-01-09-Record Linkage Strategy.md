@@ -7,7 +7,7 @@ published: true
 
 ## Introduction
 
-Record linkage or Fuzzy matching is the task of matching records from different data source that do not have common identifier like Social Security Number or they are error prone. Why do we want to do it? Perhaps we want to enrich one of the datasets with information from another.
+Record linkage or Fuzzy matching is the task of matching records from different data source that do not have common identifier like Social Security Number or the identifiers dont exactly match due data quality issues. Why do we want to do it? Perhaps we want to enrich one of the datasets with information from another.
 
 For example we can link records of hospital treatment records and police data to understand severity of certain road accidents. Hospital will have severity of injury, extent of treatment, number of days patient in hospital while police will have crash details like road condition, location of crash, time of the day etc. One may be interested in understanding how these aspects are related. We can match the databases on patient name and details but often they are not standardized and prone to error e.g. mistake in name or address field.
 
@@ -23,7 +23,7 @@ In my case the requirement was consolidating Technical Equipment records in diff
 
 The record linkage tool and approach in these must be able to scale and automate the matches.
 
-Here in this post I give an overview of 3 stages in this journey generally done in this order.
+Here in this post I give an overview of 3 stages record linkage journey.
 
 ![Preprocess](/images/3_Stages.JPG)
 
