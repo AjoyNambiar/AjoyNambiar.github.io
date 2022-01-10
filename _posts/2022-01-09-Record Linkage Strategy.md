@@ -7,7 +7,7 @@ published: true
 
 ## Introduction
 
-Record linkage or Fuzzy matching is the task of matching records from different data sources that do not have common identifier, often called Primary Key in database world like Social Security Number . Why do we want to do it? One reason is we want to enrich one of the datasets with information from another.
+Record linkage or Fuzzy matching is the task of matching records from different data sources that do not have common identifier, often called Primary Key in database world like Social Security Number (SSN). Why do we want to do it? One reason is we want to enrich one of the datasets with information from another.
 
 For example we can link records of hospital treatment records and police data to understand severity of certain road accidents. Hospital will have severity of injury, extent of treatment, number of days patient in hospital while police will have crash details like road condition, location of crash, time of the day etc. One may be interested in understanding how these aspects are related. We can match the databases on patient name and details.
 
