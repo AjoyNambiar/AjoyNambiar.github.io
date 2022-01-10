@@ -17,7 +17,7 @@ For example we can link records of hospital treatment records and police data to
 
 When data is recorded in different databases or ERPs there is a chance of fields to diverge for same record, also called entity. For example you maybe using seperate services of a say a telecom company or say a bank and there may be some differences in your detail between the two accounts. This may be the reason when you call  customer support you may have to give all your details again if they transfer you to new department as their customer database may be different. This can happen because some attributes of same entity which is _you_ the customer are different in database either because
 - fields recorded incorrectly - like spelling error in name or lack of standardization First Name, Second Name order etc
-- fields changed - like changes in address 
+- fields changed - like changes in address or phone numbers
 
 ![Preprocess](/images/Record-linkage-example.png)
 
