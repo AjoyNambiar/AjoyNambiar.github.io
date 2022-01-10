@@ -25,11 +25,11 @@ When the dataset is small humans do a very good job in matching record but this 
 
 **Why do business care**
 
-Business wants to have a Single View of Customer or Entity, also called Mastered Data. This makes decision making easier and business processes smoother.
+Business wants to have a Single View of Customer or Entity, also called Mastered Data. This makes decision making easier and business processes smoother. What needs to be done is connect the data silos.
 
 For example in business context matching records of telecomunication constumers on their address to understand how many services or products _a household_ is consuming e.g. mobile service, internet and streaming so the companies can offer a cumulative package to customers based on their household usage. It is possible customer records of different services are stored in seperated databases and record linkage maybe needed. Why this can be useful - it is generally given that consumers with multiple services tailored for them tend not to jump to different service provider. 
 
-In my case the requirement was consolidating Technical Equipment records in different ERP and application database which are used by different departments - Maintenance, Finance and Manufacturing. These different databases do not have a common unique identifier and data quality issues mean there is error in how same records are stored. In absence of robust record linkage a manual matching and validation is required - this requires lot of bandwidth.
+In my case the requirement was consolidating Technical Equipment records in different ERP and legacy application databases which are used by different departments - Maintenance, Finance and Manufacturing. These different databases do not have a common unique identifier and data quality issues mean there is error in how same records are stored. In absence of robust record linkage a manual matching and validation is required - this requires lot of human intervention and bandwidth.
 
 The record linkage tool and approach with ability to scale and automate matches is key here.
 
