@@ -91,7 +91,7 @@ ML classification algorthms are used to divide records pairs into matches and no
 1.	Supervised – The use training data to learn classification for e.g. logistic regression
 2.	Unsupervised – These algorithms do not need training data e.g. K-means clustering
 
-I found [Python Record Linkage Toolkit](Python Record Linkage Toolkit) has capabilities like:
+I found [Python Record Linkage Toolkit](https://recordlinkage.readthedocs.io/en/latest/about.html) has capabilities like:
 
 - Ability to define the types of matches for each column based on the column data types
 - Use “blocks” to limit the pool of potential matches
