@@ -33,7 +33,7 @@ In my case the requirement was consolidating Technical Equipment records in diff
 
 The record linkage tool and approach with ability to scale and automate matches is key here.
 
-Here in this post I give an overview of 3 stages record linkage journey.
+Here in this post I give an overview of 3 stages record linkage journey. Often one starts this journey and can stop at stage 1 or 2 based on their use case. 
 
 ![Preprocess](/images/3_Stages.JPG)
 
@@ -91,7 +91,7 @@ ML classification algorthms are used to divide records pairs into matches and no
 1.	Supervised – The use training data to learn classification for e.g. logistic regression
 2.	Unsupervised – These algorithms do not need training data e.g. K-means clustering
 
-I found Python Record Linkage Toolkit has several additional capabilities:
+I found Python Record Linkage Toolkit has capabilities like:
 
 - Ability to define the types of matches for each column based on the column data types
 - Use “blocks” to limit the pool of potential matches
@@ -100,6 +100,6 @@ I found Python Record Linkage Toolkit has several additional capabilities:
 - Supervised and unsupervised learning approaches are available
 
 
-The problem I faces it is a little more complicated to wrangle the results in order to do further validation. However, the steps are relatively standard pandas commands so do not let that intimidate you.
+The problem I faced was it is a little complicated to wrangle the results in order to do further validation. However, the steps are relatively standard pandas commands so do not let that intimidate you.
 
 credits: Title image - El cajista [https://www.oldbookillustrations.com/illustrations/compositor-composing-stick/](https://www.oldbookillustrations.com/illustrations/compositor-composing-stick/)
