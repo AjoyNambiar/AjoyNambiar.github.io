@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-### ![DT](/images/compositor-composing-stick-1200.jpg)
+### ![DT](/images/compositor-composing-stick-768.jpg)
 
 
 
