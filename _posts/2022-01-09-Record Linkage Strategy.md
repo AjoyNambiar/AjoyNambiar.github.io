@@ -51,6 +51,7 @@ Matches from Rule2
 To do this one must have domain knowledge and understanding of dataset. Requires preprocessing as like standardizing the upper or lower care, parsing and splitting string, standardizing the strings to have special character or not like zip code with hyphen or not.
 
 
+
 **2 Probablistic Match**
 
 In probabilistic match or fuzzy matching is based on the fact that each record has multiple attributes. In Ideal world all attributes match for same record in two databases. But in real world matching records will have some attributes different. Weights are assigned to each attributes to correctly estimate match and non-match, these weights then used to calculate probability that the records from different dataset are same or not.
