@@ -12,12 +12,18 @@ Record linkage or Fuzzy matching is the task of matching records from different 
 For example we can link records of hospital treatment records and police data to understand severity of certain road accidents. Hospital will have severity of injury, extent of treatment, number of days patient in hospital while police will have crash details like road condition, location of crash, time of the day etc. One may be interested in understanding how these aspects are related. We can match the databases on patient name and details but often they are not standardized and prone to error e.g. mistake in name or address field.
 
 
-![Preprocess](/images/Record-linkage-example.png)
 
+**What causes the mismatch**
+
+When data is recorded in different databases or ERPs there is a chance of fields to diverge for same record, also called entity. For example you maybe using seperate services of a say a telecom company or say a bank and there may be some differences in your detail between the two accounts. This may be the reason when you call  customer support you may have to give all your details again if they transfer you to new department as their customer database may be different. This can happen because some attributes of same entity which is _you_ the customer are different in database either because
+- fields recorded incorrectly - like spelling error in name or lack of standardization First Name, Second Name order etc
+- fields changed - like changes in address 
+
+![Preprocess](/images/Record-linkage-example.png)
 
 When the dataset is small humans do a very good job in matching record but this can be tricky challenge when datasets are large and simple excel vlookup fail as there may be no exact match. 
 
-Another example in business context is linking records of telecomunication constumers on their address to understand how many services or products a household is consuming e.g. mobile service, internet and streaming so the companies can offer a cumulative package to customers based on their household usage. It is generally given that consumers with multiple services tend not to jump to different service provider. 
+Another example in business context is matching records of telecomunication constumers on their address to understand how many services or products a household is consuming e.g. mobile service, internet and streaming so the companies can offer a cumulative package to customers based on their household usage. It is possible customer records of different services are stored in seperated databases and record linkage maybe needed. Why this can be useful - it is generally given that consumers with multiple services tailored for them tend not to jump to different service provider. 
 
 In my case the requirement was consolidating Technical Equipment records in different ERP and application database which are used by different departments - Maintenance, Finance and Manufacturing. These different databases do not have a common unique identifier and data quality issues mean there is error in how same records are stored
 
@@ -54,9 +60,12 @@ To do this one must have domain knowledge and understanding of dataset. Requires
 
 **2 Probablistic Match**
 
-In probabilistic match or fuzzy matching is based on the fact that each record has multiple attributes. In Ideal world all attributes match for same record in two databases. But in real world matching records will have some attributes different. Weights are assigned to each attributes to correctly estimate match and non-match, these weights then used to calculate probability that the records from different dataset are same or not.
+Probabilistic Match approach came about in 1960s to match census data. This matching is based on the fact that each record has multiple attributes and in ideal world all attributes match for same record in two databases. But as we know in real world matching records will have some attributes different.
 
-Here is an approach which came about in 1960s to match census data:
+This method uses the fact some fields will match purely by chance for non-matching records like Date of Birth and while there is a chance that some fields can mismatch for same entity, for example my name is often misspelled as Ajay. 
+
+
+Weights are assigned to each attributes to correctly estimate match and non-match, these weights then used to calculate probability that the records from different dataset are same or not. Below are steps to gets probabilistic match
 
 1.	Assign match and non match probabilities: Lets say one of the attributes for a match is Date of Birth (DOB) of a person exisiting in two different datasets. Then DOB of matching purely by chance for different people (non-matches) is 1/365 or 0.27% called µ and it can be estimated that for same person (matching record) the probability of DOB matching is 95% (DOBs can be blank or have errors in datasets hence not 100%) called m
 2.	Run comparison of the attribute DOB in this case for each record from dataset1 and dataset2. If attributes match then a Match weight is assigned which is m/u and if attributes don’t match then it is (1-m)/(1-u). In short if there is match the weigt will be high and if attributes don’t match then weight is low.
@@ -67,7 +76,8 @@ b.	Precision – Proportion of algo matches that are true matches. I think of it
 5.	Tune the probabilities based on the results and understanding on the datasets
 
 Advantage of this approach is the weights can be trained to get away from building complex rules and requires less human intervention. 
-Disadvantage is it is computational heavy as all record pairs have to compared and scored. If the size of datasets are N and M rows respectively then order of matches analyzed will be in order of M x N. One way to get around this is called ‘Blocking’, which only compare records where one of the attributes is same for e.g. compare people whose Place of Birth is same. This is significantly reduce the comparison.
+
+Disadvantage is it is computational heavy as all record pairs have to compared and scored. If the size of datasets are N and M rows respectively then order of matches when need analyzing will be in order of M x N. One way to get around this is called ‘Blocking’, which only compare records where one of the attributes is same for e.g. compare people whose City of Birth is same. This is significantly reduce the comparison.
 
 
 
