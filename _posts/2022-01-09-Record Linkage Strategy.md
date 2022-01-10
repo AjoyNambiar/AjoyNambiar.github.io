@@ -102,4 +102,4 @@ I found [Python Record Linkage Toolkit](https://recordlinkage.readthedocs.io/en/
 
 The problem I faced was it is a little complicated to wrangle the results in order to do further validation. However, the steps are relatively standard pandas commands so do not let that intimidate you.
 
-credits: Title image - El cajista [https://www.oldbookillustrations.com/illustrations/compositor-composing-stick/](https://www.oldbookillustrations.com/illustrations/compositor-composing-stick/)
+credits: Title image - [El cajista]((https://www.oldbookillustrations.com/illustrations/compositor-composing-stick/))
