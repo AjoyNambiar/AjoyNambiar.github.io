@@ -7,9 +7,9 @@ published: true
 
 ## Introduction
 
-Record linkage or Fuzzy matching is the task of matching records from different data source that do not have common identifier like Social Security Number or the identifiers dont exactly match due data quality issues. Why do we want to do it? Perhaps we want to enrich one of the datasets with information from another.
+Record linkage or Fuzzy matching is the task of matching records from different data sources that do not have common identifier, often called Primary Key in database world like Social Security Number . Why do we want to do it? One reason is we want to enrich one of the datasets with information from another.
 
-For example we can link records of hospital treatment records and police data to understand severity of certain road accidents. Hospital will have severity of injury, extent of treatment, number of days patient in hospital while police will have crash details like road condition, location of crash, time of the day etc. One may be interested in understanding how these aspects are related. We can match the databases on patient name and details but often they are not standardized and prone to error e.g. mistake in name or address field.
+For example we can link records of hospital treatment records and police data to understand severity of certain road accidents. Hospital will have severity of injury, extent of treatment, number of days patient in hospital while police will have crash details like road condition, location of crash, time of the day etc. One may be interested in understanding how these aspects are related. We can match the databases on patient name and details.
 
 
 
@@ -23,11 +23,15 @@ When data is recorded in different databases or ERPs there is a chance of fields
 
 When the dataset is small humans do a very good job in matching record but this can be tricky challenge when datasets are large and simple excel vlookup fail as there may be no exact match. 
 
-Another example in business context is matching records of telecomunication constumers on their address to understand how many services or products a household is consuming e.g. mobile service, internet and streaming so the companies can offer a cumulative package to customers based on their household usage. It is possible customer records of different services are stored in seperated databases and record linkage maybe needed. Why this can be useful - it is generally given that consumers with multiple services tailored for them tend not to jump to different service provider. 
+**Why do business care**
 
-In my case the requirement was consolidating Technical Equipment records in different ERP and application database which are used by different departments - Maintenance, Finance and Manufacturing. These different databases do not have a common unique identifier and data quality issues mean there is error in how same records are stored
+Business wants to have a Single View of Customer or Entity. This makes decision making easier and business processes smoother.
 
-The record linkage tool and approach in these must be able to scale and automate the matches.
+For example in business context matching records of telecomunication constumers on their address to understand how many services or products _a household_ is consuming e.g. mobile service, internet and streaming so the companies can offer a cumulative package to customers based on their household usage. It is possible customer records of different services are stored in seperated databases and record linkage maybe needed. Why this can be useful - it is generally given that consumers with multiple services tailored for them tend not to jump to different service provider. 
+
+In my case the requirement was consolidating Technical Equipment records in different ERP and application database which are used by different departments - Maintenance, Finance and Manufacturing. These different databases do not have a common unique identifier and data quality issues mean there is error in how same records are stored. In absence of robust record linkage a manual matching and validation is required - this requires lot of bandwidth.
+
+The record linkage tool and approach with ability to scale and automate matches is key here.
 
 Here in this post I give an overview of 3 stages record linkage journey.
 
